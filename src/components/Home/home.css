@@ -1,0 +1,29 @@
+.home {
+  justify-content: center;
+  margin-bottom: 3rem;
+  position: relative;
+  width: 100%;
+}
+.home .slide img {
+  width: 100%;
+}
+.home .homeContent .list-promotion .promotion-item {
+  width: 20%;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+.home .homeContent .list-promotion .promotion-item .promotion__inner {
+  padding: 10px;
+  width: 100%;
+}
+.home .homeContent .list-promotion .promotion-item .promotion__inner .contentPromotion_inner span {
+  display: block;
+  font-weight: 600;
+}
+.home .homeContent .list-promotion .promotion-item .promotion__inner .contentPromotion_inner p {
+  margin: 10px 0 !important;
+}
+.home .homeContent .list-promotion .promotion-item .promotion__inner .coppyCode {
+  justify-content: right;
+}/*# sourceMappingURL=home.css.map */
