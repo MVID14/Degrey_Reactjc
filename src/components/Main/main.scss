@@ -1,0 +1,71 @@
+
+.main{
+    justify-content: center;
+    margin-bottom: 3rem;
+    position: relative;
+    width: 100%;
+
+    .mainContent{
+
+        .secTitle{
+            display: flex;
+            justify-content: space-between;
+            .title{
+            }
+            a{
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+        }
+
+        .wraplist-products{
+            width: 100%;
+            height: 100%;
+            .listProduct{
+                display: grid;
+                width: 100%;
+                grid-template-columns: auto auto auto auto auto;
+                    .singleDestination{
+                        width: 100%;
+                        padding: 5px;
+                        background: #ffff;
+                        display: block;
+                        border-radius: 4px;
+                        margin: 10px 10px;
+                        .imgDiv{
+                            width: 100%;
+                            height: 230px;
+                            img{
+                            width: 100%;
+                            object-fit: cover;
+                            }
+                        }
+                        .cardInfo{
+
+                            .destTitle{
+                                height: 40px;
+                                span{
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                        .priceProduct{
+                            margin: 20px 4px 0 4px;
+                            .fees{
+                                font-weight: 600;
+                                font-size: 15px;
+                            }   
+                            .discound{
+                                padding-left: 10px;
+                                text-decoration: line-through;
+                                font-size: 13px;
+                                color: #888;
+                            }
+                        }
+                    }
+            }
+        }
+    }
+
+}

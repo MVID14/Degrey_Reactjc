@@ -1,7 +1,7 @@
 import React from 'react'
 import './app.css'
-import Home from './components/Home/Home'
-// import Main from './components/Main/Main'
+import Home from './components/Home/Home.jsx'
+import Main from './components/Main/Main.jsx'
 import Navbar from "./components/Navbar/Navbar.jsx"
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
     <>
       <Navbar/>
       <Home/>
-      {/* <Main/> */}
+      <Main/>
     </>
   )
 }
