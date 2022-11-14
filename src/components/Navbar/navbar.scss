@@ -1,38 +1,39 @@
 .navBarSection {
     height: 70px;
     background: #fff;
-
+    margin-top: -8px;
 }
 
 .header {
-    margin-top: -8px;
     // max-height: 70px;
     position: fixed;
     z-index: 1000;
     justify-content: space-between;
-
-    // margin: auto;
     width: 100%;
+    min-height: 80px;
     background: #fff;
-    box-shadow: 0 2px 4px rgba(2, 15, 29,0.294);
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.294);
 
     .flex-container-header {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         .logoDiv {
             font-size: 25px;
             width: 85px;
             max-height: 70px;
-
+            min-width: 80px;
             .logo {
                 width: 100%;
             }
         }
 
         .navBar {
-            margin-left: 120px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
 
             .navLinks {
                 border: transparent;
@@ -75,11 +76,16 @@
         }
 
         .cart {
-            display: block;
+            display: flex;
+            width: 10%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             a {
                 display: flex;
                 justify-content: center;
+                align-items: center;
 
                 .icon {
                     font-size: 25px;

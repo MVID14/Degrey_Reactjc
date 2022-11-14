@@ -1,70 +1,116 @@
-
-.main{
+.main {
     justify-content: center;
     margin-bottom: 3rem;
     position: relative;
     width: 100%;
 
-    .mainContent{
+    .mainContent {
 
-        .secTitle{
+        .secTitle {
             display: flex;
             justify-content: space-between;
-            .title{
-            }
-            a{
+
+            .title {}
+
+            a {
                 align-items: center;
                 justify-content: center;
                 display: flex;
             }
         }
 
-        .wraplist-products{
+        .wraplist-products {
             width: 100%;
             height: 100%;
-            .listProduct{
+
+            .listProduct {
                 display: grid;
                 width: 100%;
-                grid-template-columns: auto auto auto auto auto;
-                    .singleDestination{
+                grid-template-columns: repeat(5, 1fr);
+                gap: 0.5rem;
+                .singleDestination {
+                    width: 100%;
+                    padding: 5px;
+                    background: #ffff;
+                    display: block;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    // margin: 10px 10px;
+                    
+                    .imgDiv {
                         width: 100%;
-                        padding: 5px;
-                        background: #ffff;
-                        display: block;
-                        border-radius: 4px;
-                        margin: 10px 10px;
-                        .imgDiv{
-                            width: 100%;
-                            height: 230px;
-                            img{
+
+                        img {
                             width: 100%;
                             object-fit: cover;
-                            }
                         }
-                        .cardInfo{
+                    }
 
-                            .destTitle{
-                                height: 40px;
-                                span{
-                                    font-weight: 500;
-                                }
-                            }
-                        }
-                        .priceProduct{
-                            margin: 20px 4px 0 4px;
-                            .fees{
-                                font-weight: 600;
-                                font-size: 15px;
-                            }   
-                            .discound{
-                                padding-left: 10px;
-                                text-decoration: line-through;
-                                font-size: 13px;
-                                color: #888;
+                    .cardInfo {
+
+                        .destTitle {
+                            height: 40px;
+
+                            span {
+                                font-weight: 500;
                             }
                         }
                     }
+
+                    .priceProduct {
+                        margin: 20px 4px 0 4px;
+
+                        .fees {
+                            font-weight: 600;
+                            font-size: 15px;
+                        }
+
+                        .discound {
+                            padding-left: 10px;
+                            text-decoration: line-through;
+                            font-size: 13px;
+                            color: #888;
+                        }
+                    }
+                }
             }
+        }
+
+        .buttonDiv {
+
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+
+            a {
+                display: inline-block;
+                padding: 10px 30px;
+                color: white;
+                position: relative;
+                background-color: #303030;
+                z-index: 1;
+
+                &::before {
+                    height: 100%;
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    background-color: #000;
+                    width: 0;
+                    left: 50%;
+                    transform: translate(-50%,0);
+                    top: 0;
+                    z-index: -1;
+                    transition: width 0.5s ease-out;
+
+                }
+                &:hover::before {
+                    width: 100%;
+                }
+                
+            }
+
         }
     }
 
