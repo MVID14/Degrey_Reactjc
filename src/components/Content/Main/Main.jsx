@@ -215,6 +215,7 @@ const Tshirt = [
   },
 ];
 
+
 const Main = () => {
   return (
     <section className="main container">
@@ -224,7 +225,7 @@ const Main = () => {
             BACKPACKS | BALO
           </h2>
 
-          <a href="">Xem tat ca</a>
+          <a href="/">Xem tat ca</a>
         </div>
 
         <div className="wraplist-products ">
@@ -253,7 +254,7 @@ const Main = () => {
         </div>
 
         <div className="buttonDiv">
-          <a href="">
+          <a href="/">
             XEM THÊM SẢN PHẨM <b>BLACKPACKS | BALO</b>
           </a>
         </div>
@@ -266,7 +267,7 @@ const Main = () => {
             ÁO KHOÁC | JACKETS
           </h2>
 
-          <a href="">Xem tat ca</a>
+          <a href="/">Xem tat ca</a>
         </div>
 
         <div className="wraplist-products ">
@@ -295,7 +296,7 @@ const Main = () => {
         </div>
 
         <div className="buttonDiv">
-          <a href="">
+          <a href="/">
             XEM THÊM SẢN PHẨM <b> ÁO KHOÁC | JACKETS</b>
           </a>
         </div>
@@ -306,7 +307,7 @@ const Main = () => {
           <h2 className="title" data-aos="fade-up">
             ÁO KHOÁC | JACKETS
           </h2>
-          <a href="">Xem tat ca</a>
+          <a href="/">Xem tat ca</a>
         </div>
         <div className="wraplist-products ">
           <div className="listProduct ">
@@ -333,7 +334,7 @@ const Main = () => {
           </div>
         </div>
         <div className="buttonDiv">
-          <a href="">
+          <a href="/">
             XEM THÊM SẢN PHẨM <b> ÁO KHOÁC | JACKETS</b>
           </a>
         </div>

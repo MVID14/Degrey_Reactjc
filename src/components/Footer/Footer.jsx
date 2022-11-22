@@ -52,11 +52,11 @@ const Footer = () => {
                          <h3>Hỗ trợ khách hàng</h3>
                         <div className="supportFooter__inner">
                           <ul>
-                            <li><a href="">Hệ thống cửa hàng</a></li>
-                            <li><a href="">Hướng dẫn đặt hàng</a></li>
-                            <li><a href="">Chính sách và quy định</a></li>
-                            <li><a href="">Chính sách bảo mật</a></li>
-                            <li><a href="">Thông tin sở hữu</a></li>
+                            <li><a href="/">Hệ thống cửa hàng</a></li>
+                            <li><a href="/">Hướng dẫn đặt hàng</a></li>
+                            <li><a href="/">Chính sách và quy định</a></li>
+                            <li><a href="/">Chính sách bảo mật</a></li>
+                            <li><a href="/">Thông tin sở hữu</a></li>
                           </ul>
                         </div>
                       </div>
@@ -94,7 +94,7 @@ const Footer = () => {
         <div className="footerFooter container flex">
           <p>Copyright © 2022 
           <a href="https://degrey.vn/?fbclid=IwAR1DMRsHT1TyEnlxmqd0_N6Aoku2PbU-XlIWRIVOXPQcLWOztWdirePz9Bs">DEGREY VIETNAM.</a>
-          <a href="">MVD</a>
+          <a href="/">MVD</a>
           </p>
         </div>
       </section>

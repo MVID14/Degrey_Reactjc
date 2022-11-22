@@ -13,7 +13,7 @@ const Navbar = () => {
       <header className="header container flex">
         <div className="flex-container-header">
           <div className="logoDiv">
-            <a href="">
+            <a href="/">
               <img src={img} alt="" className="logo" />
             </a>
           </div>
@@ -44,7 +44,7 @@ const Navbar = () => {
           </div>
 
           <div className="cart">
-            <a href="">
+            <a href="/">
               {" "}
               <BsCart2 className="icon" />{" "}
             </a>
