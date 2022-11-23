@@ -215,50 +215,56 @@ const Tshirt = [
   },
 ];
 
+function ProductComp(props){
+    return (
+      <div className="mainContent ">
+      <div className="secTitle">
+        <h2 className="title" data-aos="fade-up">
+          {props.h2}
+        </h2>
+
+        <a href="/">Xem tat ca</a>
+      </div>
+
+      <div className="wraplist-products ">
+        <div className="listProduct ">
+          {Data.map(({ id, imgSrc, destTitle, fees, discound }) => {
+            return (
+              <div key={id} className="singleDestination">
+                <div className="imgDiv">
+                  <img src={imgSrc} alt="" />
+                </div>
+
+                <div className="cardInfo">
+                  <div className="destTitle">
+                    <span>{destTitle}</span>
+                  </div>
+
+                  <div className="priceProduct">
+                    <span className="fees">{fees}</span>
+                    <span className="discound">{discound}</span>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="buttonDiv">
+        <a href="/">
+          XEM THÊM SẢN PHẨM <b>BLACKPACKS | BALO</b>
+        </a>
+      </div>
+    </div>
+    )
+}
+
 
 const Main = () => {
   return (
     <section className="main container">
-      <div className="mainContent ">
-        <div className="secTitle">
-          <h2 className="title" data-aos="fade-up">
-            BACKPACKS | BALO
-          </h2>
-
-          <a href="/">Xem tat ca</a>
-        </div>
-
-        <div className="wraplist-products ">
-          <div className="listProduct ">
-            {Data.map(({ id, imgSrc, destTitle, fees, discound }) => {
-              return (
-                <div key={id} className="singleDestination">
-                  <div className="imgDiv">
-                    <img src={imgSrc} alt="" />
-                  </div>
-
-                  <div className="cardInfo">
-                    <div className="destTitle">
-                      <span>{destTitle}</span>
-                    </div>
-
-                    <div className="priceProduct">
-                      <span className="fees">{fees}</span>
-                      <span className="discound">{discound}</span>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        <div className="buttonDiv">
-          <a href="/">
-            XEM THÊM SẢN PHẨM <b>BLACKPACKS | BALO</b>
-          </a>
-        </div>
-      </div>
+      <ProductComp h2="BACKPACKS | BALO" h3="BACKPACKS | BALO"></ProductComp>
 
       {/* Jacket  */}
       <div className="mainContent ">
