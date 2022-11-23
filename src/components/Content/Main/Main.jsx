@@ -61,28 +61,28 @@ const Data = [
   },
 
   {
-    id: 5,
+    id: 7,
     imgSrc: balo3,
     destTitle: "Degrey Galaxy Backpack - DGB",
     fees: "$900",
   },
 
   {
-    id: 5,
+    id: 8,
     imgSrc: balo5,
     destTitle: "Degrey Galaxy Backpack - DGB",
     fees: "$700",
   },
 
   {
-    id: 5,
+    id: 9,
     imgSrc: balo2,
     destTitle: "Degrey Galaxy Backpack - DGB",
     fees: "$700",
   },
 
   {
-    id: 5,
+    id: 10,
     imgSrc: balo4,
     destTitle: "Degrey Galaxy Backpack - DGB",
     fees: "$700",
@@ -145,7 +145,7 @@ const Jacket = [
     fees: "$200",
   },
   {
-    id: 4,
+    id: 10,
     imgSrc: jacket2,
     destTitle: "Áo Khoác Nấm Degrey ss2 - AKND ss2",
     fees: "$200",

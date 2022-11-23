@@ -3,6 +3,7 @@ import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Content from "./components/Content/Content";
 import Navbar from "./components/Navbar/Navbar.jsx";
+import Product from "./pages/product/product.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
         <div className="main">
           <Routes>
             <Route path="/" element={<Content />}></Route>
+            <Route path="/product" element={<Product />}></Route>
           </Routes>
         </div>
         <div className="Footer">
