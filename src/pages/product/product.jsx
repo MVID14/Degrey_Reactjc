@@ -20,6 +20,11 @@ import jacket2 from '../../assets/img/jacket2.webp';
 import jacket3 from '../../assets/img/jacket3.webp';
 
 //
+
+import ProductItem from '../../components/ProductItem/ProductItem';
+import Listproduct from '../../components/Listproduct/Listproduct';
+
+//
 const Data = [
     {
         id: 1,
@@ -125,45 +130,6 @@ const Data = [
     },
 ];
 
-function ProductTshirt(props) {
-    return (
-        <div className="mainContent ">
-            {/* <div className="secTitle">
-                <h2 className="title" data-aos="fade-up">
-                    {props.title}
-                </h2>
-                <a href="/">Xem tat ca</a>
-            </div> */}
-            <div className="wraplist-products ">
-                <div className="listProduct ">
-                    {Data.map(({ id, imgSrc, destTitle, fees, discound }) => {
-                        return (
-                            <div key={id} className="singleDestination">
-                                <div className="imgDiv">
-                                    <img src={imgSrc} alt="" />
-                                </div>
-
-                                <div className="cardInfo">
-                                    <div className="destTitle">
-                                        <span>{destTitle}</span>
-                                    </div>
-
-                                    <div className="priceProduct">
-                                        <span className="fees">{fees}</span>
-                                        <span className="discound">{discound}</span>
-                                    </div>
-                                </div>
-                            </div>
-                        );
-                    })}
-                </div>
-            </div>
-            <div className="buttonDiv">
-                <a href="/">XEM THÊM SẢN PHẨM</a>
-            </div>
-        </div>
-    );
-}
 const Product = () => {
     return (
         <section>
@@ -209,8 +175,18 @@ const Product = () => {
                             </div>
                         </div>
                     </div>
-
-                    <ProductTshirt></ProductTshirt>
+                    <Listproduct>
+                        {Data.map((item) => {
+                            return (
+                                <ProductItem
+                                    id={item.id}
+                                    imgSrc={item.imgSrc}
+                                    destTitle={item.destTitle}
+                                    fees={item.fees}
+                                />
+                            );
+                        })}
+                    </Listproduct>
                 </div>
             </div>
         </section>

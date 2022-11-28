@@ -20,6 +20,8 @@ import Tshirt3 from '../../../assets/img/Tshirt3.webp';
 import Tshirt4 from '../../../assets/img/Tshirt4.webp';
 import Tshirt5 from '../../../assets/img/Tshirt5.webp';
 import Tshirt6 from '../../../assets/img/Tshirt6.webp';
+import Listproduct from '../../Listproduct/Listproduct';
+import ProductItem from '../../ProductItem/ProductItem';
 
 const Balo = [
     {
@@ -214,139 +216,30 @@ const Tshirt = [
     },
 ];
 
-function ProductBalo(props) {
-    return (
-        <div className="mainContent ">
-            <div className="secTitle">
-                <h2 className="title" data-aos="fade-up">
-                    {props.title}
-                </h2>
-                <a href="/">Xem tat ca</a>
-            </div>
-            <div className="wraplist-products ">
-                <div className="listProduct ">
-                    {Balo.map(({ id, imgSrc, destTitle, fees, discound }) => {
-                        return (
-                            <div key={id} className="singleDestination">
-                                <div className="imgDiv">
-                                    <img src={imgSrc} alt="" />
-                                </div>
-                                <div className="cardInfo">
-                                    <div className="destTitle">
-                                        <span>{destTitle}</span>
-                                    </div>
-                                    <div className="priceProduct">
-                                        <span className="fees">{fees}</span>
-                                        <span className="discound">{discound}</span>
-                                    </div>
-                                </div>
-                            </div>
-                        );
-                    })}
-                </div>
-            </div>
-            <div className="buttonDiv">
-                <a href="/">
-                    XEM THÊM SẢN PHẨM <b>BLACKPACKS | BALO</b>
-                </a>
-            </div>
-        </div>
-    );
-}
-
-function ProductJacket(props) {
-    return (
-        <div className="mainContent ">
-            <div className="secTitle">
-                <h2 className="title" data-aos="fade-up">
-                    {props.title}
-                </h2>
-                <a href="/">Xem tat ca</a>
-            </div>
-
-            <div className="wraplist-products ">
-                <div className="listProduct ">
-                    {Jacket.map(({ id, imgSrc, destTitle, fees, discound }) => {
-                        return (
-                            <div key={id} className="singleDestination">
-                                <div className="imgDiv">
-                                    <img src={imgSrc} alt="" />
-                                </div>
-
-                                <div className="cardInfo">
-                                    <div className="destTitle">
-                                        <span>{destTitle}</span>
-                                    </div>
-
-                                    <div className="priceProduct">
-                                        <span className="fees">{fees}</span>
-                                        <span className="discound">{discound}</span>
-                                    </div>
-                                </div>
-                            </div>
-                        );
-                    })}
-                </div>
-            </div>
-
-            <div className="buttonDiv">
-                <a href="/">
-                    XEM THÊM SẢN PHẨM <b> ÁO KHOÁC | JACKETS</b>
-                </a>
-            </div>
-        </div>
-    );
-}
-
-function ProductTshirt(props) {
-    return (
-        <div className="mainContent ">
-            <div className="secTitle">
-                <h2 className="title" data-aos="fade-up">
-                    {props.title}
-                </h2>
-                <a href="/">Xem tat ca</a>
-            </div>
-            <div className="wraplist-products ">
-                <div className="listProduct ">
-                    {Tshirt.map(({ id, imgSrc, destTitle, fees, discound }) => {
-                        return (
-                            <div key={id} className="singleDestination">
-                                <div className="imgDiv">
-                                    <img src={imgSrc} alt="" />
-                                </div>
-
-                                <div className="cardInfo">
-                                    <div className="destTitle">
-                                        <span>{destTitle}</span>
-                                    </div>
-
-                                    <div className="priceProduct">
-                                        <span className="fees">{fees}</span>
-                                        <span className="discound">{discound}</span>
-                                    </div>
-                                </div>
-                            </div>
-                        );
-                    })}
-                </div>
-            </div>
-            <div className="buttonDiv">
-                <a href="/">
-                    XEM THÊM SẢN PHẨM <b> ÁO KHOÁC | JACKETS</b>
-                </a>
-            </div>
-        </div>
-    );
-}
 const Main = () => {
     return (
         <section className="main container">
-            <ProductBalo title="BACKPACKS | BALO"></ProductBalo>
-            {/* Jacket  */}
-            <ProductJacket title="JACKET | ÁO KHOÁC"></ProductJacket>
-            {/* Tshirt    */}
-            <ProductTshirt title="TSHIRT | ÁO THUN"></ProductTshirt>
+            <Listproduct title="BLACKPACKS | BALO" link="Xem tat ca">
+                {Balo.map((item) => {
+                    return (
+                        <ProductItem id={item.id} imgSrc={item.imgSrc} descTitle={item.destTitle} fees={item.fees} />
+                    );
+                })}
+            </Listproduct>
+            <Listproduct title="JACKET | ÁO KHOÁC">
+                {Jacket.map((item) => {
+                    return (
+                        <ProductItem id={item.id} imgSrc={item.imgSrc} descTitle={item.destTitle} fees={item.fees} />
+                    );
+                })}
+            </Listproduct>
+            <Listproduct title="TSHIRT | ÁO THUN">
+                {Tshirt.map((item) => {
+                    return (
+                        <ProductItem id={item.id} imgSrc={item.imgSrc} descTitle={item.destTitle} fees={item.fees} />
+                    );
+                })}
+            </Listproduct>
         </section>
     );
 };
