@@ -1,12 +1,30 @@
 import React from 'react';
 import './home.scss';
-import images from '../../../assets/img/slide.webp';
+// import images from '../../../assets/img/slide.webp';
+import images1 from '../../../assets/img/slide1.webp';
+import images2 from '../../../assets/img/slide2.webp';
+
+import { GrFormPrevious } from 'react-icons/gr';
+import { GrFormNext } from 'react-icons/gr';
 
 const Home = () => {
     return (
         <section className="home container">
             <div className="slide">
-                <img src={images} alt="" />
+                <GrFormPrevious className="icon-left" />
+                <ul className="slider-dot">
+                    <li className="slider-dot-item active"></li>
+                    <li className="slider-dot-item"></li>
+                </ul>
+                <div className="myslide">
+                    <div className="slideItem">
+                        <img src={images1} alt="" />
+                    </div>
+                    <div className="slideItem">
+                        <img src={images2} alt="" />
+                    </div>
+                </div>
+                <GrFormNext className="icon-right" />
             </div>
             <div className="homeContent  ">
                 <div className="homeContentTitle">

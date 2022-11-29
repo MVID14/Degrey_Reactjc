@@ -34,7 +34,7 @@ const IntroductionList = (props) => {
     return (
         <>
             <div className="contentParaSecondList">
-                <div className="contentParaSecondItem">
+                <div key={props.id} className="contentParaSecondItem">
                     <div className="contentParaSecond__title">
                         <span>{props.title}</span>
                     </div>
@@ -50,7 +50,7 @@ const IntroductionList = (props) => {
     );
 };
 
-const Introduce = () => {
+const Introduce = ({ children }) => {
     return (
         <section>
             <div className="wrapper">
