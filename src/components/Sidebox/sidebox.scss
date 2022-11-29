@@ -1,0 +1,46 @@
+.wrapperSidebox {
+    width: 100%;
+    .group-sidebox {
+        padding: 10px 10px 0 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .sidebox-title {
+            font-size: 16px;
+            border-bottom: 1px solid #cccccc;
+        }
+        .side-box-content {
+            .card-body_content {
+                display: flex;
+                margin: 2px 0 10px 0;
+                justify-content: space-between;
+                height: 100%;
+                padding: 5px 0;
+                border-bottom: 1px dashed #cccccc;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+                .icon {
+                    width: 16px;
+                    height: 29px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .group-sidebox-banner {
+        margin-top: 40px;
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -23,6 +23,7 @@ import jacket3 from '../../assets/img/jacket3.webp';
 
 import ProductItem from '../../components/ProductItem/ProductItem';
 import Listproduct from '../../components/Listproduct/Listproduct';
+import { Link } from 'react-router-dom';
 
 //
 const Data = [
@@ -137,7 +138,7 @@ const Product = () => {
                 <div className="product container">
                     <div className="bannerProduct">
                         <div className="productTitle">
-                            <span>Trang chủ | </span>
+                            <Link to={'/'}>Trang chủ | </Link>
                             <span>Tất cả sản phẩm</span>
                         </div>
                         <div className="imgDiv">

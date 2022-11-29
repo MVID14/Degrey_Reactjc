@@ -1,58 +1,52 @@
-
-
-
-.home{
+.home {
     justify-content: center;
     margin-bottom: 3rem;
     position: relative;
     width: 100%;
     margin-top: 28px;
-    .slide{
+    .slide {
         margin-bottom: 3rem;
-        img{
+        img {
             width: 100%;
         }
     }
 
-    .homeContent{
-        .homeContentTitle{
-
-            .h3{
+    .homeContent {
+        .homeContentTitle {
+            .h3 {
                 margin: 10px 0 5px 0;
             }
         }
-        .list-promotion{
+        .list-promotion {
             display: flex;
-            .promotion-item{
+            .promotion-item {
+                width: 35%;
                 background: #ffff;
                 display: block;
                 border-radius: 4px;
-                border: 1px solid   black;
+                border: 1px solid black;
                 margin: 0 5px;
-                .promotion__inner{
+                .promotion__inner {
                     padding: 10px;
                     width: 100%;
-                    .contentPromotion_inner{
-                        
-                        span{
+                    .contentPromotion_inner {
+                        span {
                             display: block;
                             font-weight: 700;
-
                         }
-                        p{
+                        p {
                             margin: 10px 0 !important;
                         }
                     }
-                    .coppyCode{
+                    .coppyCode {
                         display: block;
                         text-align: right;
                         justify-content: right;
 
-                        .btnCoppyCode{
+                        .btnCoppyCode {
                             padding: 5px 15px;
                             border: 2px solid black;
                             border-radius: 15px;
-
                         }
                     }
                 }

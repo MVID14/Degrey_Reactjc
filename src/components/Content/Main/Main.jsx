@@ -222,21 +222,21 @@ const Main = () => {
             <Listproduct title="BLACKPACKS | BALO" link="Xem tat ca">
                 {Balo.map((item) => {
                     return (
-                        <ProductItem id={item.id} imgSrc={item.imgSrc} descTitle={item.destTitle} fees={item.fees} />
+                        <ProductItem id={item.id} imgSrc={item.imgSrc} destTitle={item.destTitle} fees={item.fees} />
                     );
                 })}
             </Listproduct>
             <Listproduct title="JACKET | ÁO KHOÁC">
                 {Jacket.map((item) => {
                     return (
-                        <ProductItem id={item.id} imgSrc={item.imgSrc} descTitle={item.destTitle} fees={item.fees} />
+                        <ProductItem id={item.id} imgSrc={item.imgSrc} destTitle={item.destTitle} fees={item.fees} />
                     );
                 })}
             </Listproduct>
             <Listproduct title="TSHIRT | ÁO THUN">
                 {Tshirt.map((item) => {
                     return (
-                        <ProductItem id={item.id} imgSrc={item.imgSrc} descTitle={item.destTitle} fees={item.fees} />
+                        <ProductItem id={item.id} imgSrc={item.imgSrc} destTitle={item.destTitle} fees={item.fees} />
                     );
                 })}
             </Listproduct>

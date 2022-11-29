@@ -7,6 +7,7 @@ import Product from './pages/product/product.jsx';
 import Introduce from './pages/introdution/introduce.jsx';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Store from './pages/store/store';
 
 const App = () => {
     return (
@@ -19,6 +20,7 @@ const App = () => {
                     <Routes>
                         <Route path="/" element={<Content />}></Route>
                         <Route path="/product" element={<Product />}></Route>
+                        <Route path="/store" element={<Store />}></Route>
                         <Route path="/introduce" element={<Introduce />}></Route>
                     </Routes>
                 </div>
