@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.30f02cc6.css",
+    "main.css": "./static/css/main.cbcae39a.css",
     "main.js": "./static/js/main.b37b840c.js",
     "static/media/balo3-3.jpeg": "./static/media/balo3-3.113f85b4bd43c051a877.jpeg",
     "static/media/jacket1.webp": "./static/media/jacket1.b7eaec7285050c402dc5.webp",
@@ -23,11 +23,11 @@
     "static/media/jacket5.webp": "./static/media/jacket5.4944dfe7f65d73fc74f6.webp",
     "static/media/logo_accept.webp": "./static/media/logo_accept.9cd283ce3fa37b5563fc.webp",
     "index.html": "./index.html",
-    "main.30f02cc6.css.map": "./static/css/main.30f02cc6.css.map",
+    "main.cbcae39a.css.map": "./static/css/main.cbcae39a.css.map",
     "main.b37b840c.js.map": "./static/js/main.b37b840c.js.map"
   },
   "entrypoints": [
-    "static/css/main.30f02cc6.css",
+    "static/css/main.cbcae39a.css",
     "static/js/main.b37b840c.js"
   ]
 }
