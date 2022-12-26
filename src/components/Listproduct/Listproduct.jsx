@@ -5,10 +5,8 @@ const Listproduct = ({ title, children, link }) => {
     return (
         <div>
             <div className="mainContent ">
-                <div className="secTitle">
-                    <h2 className="title" data-aos="fade-up">
-                        {title}
-                    </h2>
+                <div className="secTitle" data-aos="fade-right">
+                    <h2 className="title">{title}</h2>
                     <a href="/">{link}</a>
                 </div>
                 <div className="wraplist-products ">

@@ -5,9 +5,42 @@
     width: 100%;
     margin-top: 28px;
     .slide {
+        display: flex;
         margin-bottom: 3rem;
+        object-fit: cover;
+        width: 100%;
+        position: relative;
+
         img {
             width: 100%;
+        }
+        .preSlide {
+            display: flex;
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 50%;
+            left: 20px;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background: #ffff;
+            border-radius: 50%;
+        }
+        .nextSlide {
+            display: flex;
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 50%;
+            left: 96%;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background: #ffff;
+            border-radius: 50%;
         }
     }
 

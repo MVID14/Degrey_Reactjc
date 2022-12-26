@@ -226,14 +226,14 @@ const Main = () => {
                     );
                 })}
             </Listproduct>
-            <Listproduct title="JACKET | ÁO KHOÁC">
+            <Listproduct title="JACKET | ÁO KHOÁC" link="Xem tat ca">
                 {Jacket.map((item) => {
                     return (
                         <ProductItem id={item.id} imgSrc={item.imgSrc} destTitle={item.destTitle} fees={item.fees} />
                     );
                 })}
             </Listproduct>
-            <Listproduct title="TSHIRT | ÁO THUN">
+            <Listproduct title="TSHIRT | ÁO THUN" link="Xem tat ca">
                 {Tshirt.map((item) => {
                     return (
                         <ProductItem id={item.id} imgSrc={item.imgSrc} destTitle={item.destTitle} fees={item.fees} />
