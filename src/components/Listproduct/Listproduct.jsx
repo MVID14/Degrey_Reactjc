@@ -4,7 +4,7 @@ const Listproduct = ({ title, children, link }) => {
     return (
         <div>
             <div className="mainContent ">
-                <div className="secTitle" data-aos="fade-right">
+                <div className="secTitle" >
                     <h2 className="title">{title}</h2>
                     <a href="/">{link}</a>
                 </div>
