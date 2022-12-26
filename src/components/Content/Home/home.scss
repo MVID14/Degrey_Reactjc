@@ -4,9 +4,7 @@
     width: 100%;
     margin-top: 28px;
     .slide {
-<<<<<<< HEAD
         display: flex;
-=======
         position: relative;
         .icon-left {
             position: relative;
@@ -25,7 +23,6 @@
             bottom: 40px;
             z-index: 2;
             display: flex;
-
             .slider-dot-item {
                 background: white;
                 width: 12px;
@@ -59,7 +56,6 @@
             border-radius: 52px;
             z-index: 1;
         }
->>>>>>> ba136bb4038d1b5f2f60557e00a3dc2c76bedb35
         margin-bottom: 3rem;
         object-fit: cover;
         width: 100%;
