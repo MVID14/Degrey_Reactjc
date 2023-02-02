@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './navbar.scss';
 
 import img from '../../assets/img/logo.webp';
@@ -6,8 +6,18 @@ import img from '../../assets/img/logo.webp';
 import { CiSearch } from 'react-icons/ci';
 import { BsCart2 } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import { AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineArrowLeft } from 'react-icons/ai';
 
 const Navbar = () => {
+    const [active, setActive] = useState('navBar');
+
+    const ShowNavBar = () => {
+        setActive('navBar activeNavbar');
+    };
+    const removeNave = () => {
+        setActive('navBar ');
+    };
     return (
         <section className="navBarSection">
             <header className="header container flex">
@@ -17,25 +27,32 @@ const Navbar = () => {
                             <img src={img} alt="" className="logo" />
                         </a>
                     </div>
-                    <div className="navBar">
+                    <div className={active}>
                         <ul className="navLinks flex">
                             <li className="navItem">
-                                {' '}
-                                <Link to={'/'}>Trang chủ</Link>
+                                <Link onClick={removeNave} to={'/'}>
+                                    Trang chủ
+                                </Link>
                             </li>
                             <li className="navItem">
-                                {' '}
-                                <Link to={'/product'}>Sản phẩm</Link>
+                                <Link onClick={removeNave} to={'/product'}>
+                                    Sản phẩm
+                                </Link>
                             </li>
                             <li className="navItem">
-                                {' '}
-                                <Link to={'/store'}>Store </Link>
+                                <Link onClick={removeNave} to={'/store'}>
+                                    Store{' '}
+                                </Link>
                             </li>
                             <li className="navItem">
-                                {' '}
-                                <Link to={'/introduce'}>Giới thiệu</Link>
+                                <Link onClick={removeNave} to={'/introduce'}>
+                                    Giới thiệu
+                                </Link>
                             </li>
                         </ul>
+                        <div className="closeNavbar" onClick={removeNave}>
+                            <AiOutlineArrowLeft className="icon" />
+                        </div>
                     </div>
 
                     <div className="searchOptions">
@@ -45,10 +62,12 @@ const Navbar = () => {
 
                     <div className="cart">
                         <a href="/">
-                            {' '}
-                            <BsCart2 className="icon" />{' '}
+                            <BsCart2 className="icon" />
                         </a>
                         <span>Giỏ hàng</span>
+                    </div>
+                    <div className="toggleNavbar" onClick={ShowNavBar}>
+                        <AiOutlineMenu className="icon" />
                     </div>
                 </div>
             </header>

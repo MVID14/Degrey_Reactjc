@@ -39,21 +39,17 @@
                 border: transparent;
 
                 .navItem {
-                    padding: 20px 0;
                     font-size: 16px;
-                    height: 100%;
-                    border-bottom: 2px solid white;
-
                     a {
-                        padding: 19px 15px;
-
+                        margin: 0 10px;
                     }
-
                     &:hover {
                         border-bottom: 2px solid black;
                     }
                 }
-
+            }
+            .closeNavbar {
+                display: none;
             }
         }
 
@@ -99,6 +95,98 @@
                 align-items: center;
             }
         }
+        .toggleNavbar {
+            display: none;
+        }
     }
+}
 
+@media screen and (max-width: 1024px) {
+    .navBarSection {
+        .header {
+            .flex-container-header {
+                .navBar {
+                    .navLinks {
+                        .navItem {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .container {
+            padding: 0 6rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navBarSection {
+        .header {
+            .navBar {
+                position: absolute;
+                background-color: #333;
+                height: 400px;
+                width: 100%;
+                top: 5px;
+                left: -2000px;
+                transition: 0.3s ease-in-out;
+                .navLinks {
+                    display: flex;
+                    flex-direction: column;
+                    color: white;
+                    margin-top: 20px;
+                    .navItem {
+                        margin: 30px 0;
+                        a {
+                            color: white;
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .closeNavbar {
+                    display: flex !important;
+                    position: absolute;
+                    left: 20px;
+                    top: 15px;
+                    color: #fff;
+                }
+            }
+            .activeNavbar {
+                left: 0px;
+                transition: 0.3s ease-in;
+            }
+            .cart {
+                display: flex;
+                width: 20%;
+                flex-direction: inherit;
+                .icon {
+                    font-size: 20px !important;
+                }
+                span {
+                    font-size: 14px;
+                }
+            }
+            .toggleNavbar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .icon {
+                    font-size: 20px;
+                }
+                :hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        .container {
+            padding: 0 4rem;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+}
+
+.active {
 }
