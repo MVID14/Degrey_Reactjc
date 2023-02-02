@@ -73,16 +73,28 @@
 
         .cart {
             display: flex;
-            width: 10%;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
             a {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
+                position: relative;
+                .numberCart {
+                    position: absolute;
+                    top: -4px;
+                    left: 15px;
+                    background-color: #c50017;
+                    color: white;
+                    width: 15px;
+                    height: 15px;
+                    font-size: 12px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
                 .icon {
                     font-size: 25px;
                     width: 25px;
@@ -95,6 +107,7 @@
                 align-items: center;
             }
         }
+
         .toggleNavbar {
             display: none;
         }
@@ -128,7 +141,8 @@
                 background-color: #333;
                 height: 400px;
                 width: 100%;
-                top: 5px;
+                top: 0;
+                z-index: 1000;
                 left: -2000px;
                 transition: 0.3s ease-in-out;
                 .navLinks {
@@ -163,8 +177,11 @@
                 .icon {
                     font-size: 20px !important;
                 }
+                .numberCart {
+                }
                 span {
                     font-size: 14px;
+                    display: none;
                 }
             }
             .toggleNavbar {

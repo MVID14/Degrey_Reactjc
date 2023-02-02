@@ -145,3 +145,27 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .homeContent {
+        .homeContentTitle {
+        }
+        .list-promotion {
+            .promotion-item {
+                height: 160px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .homeContent {
+        .homeContentTitle {
+        }
+        .list-promotion {
+            .promotion-item {
+                height: 180px;
+            }
+        }
+    }
+}

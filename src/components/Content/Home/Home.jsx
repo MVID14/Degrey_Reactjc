@@ -29,17 +29,6 @@ const SLIDE2 = [
 ];
 
 const Home = () => {
-    // const [currentSlide, setCurrentSlide] = useState(0);
-    // const plusSlide = () => {
-    //     if (currentSlide <= 2) {
-    //         setCurrentSlide(currentSlide + 1);
-    //     }
-    // };
-    // const truSlide = () => {
-    //     if (currentSlide > 0) {
-    //         return setCurrentSlide(currentSlide - 1);
-    //     }
-    // };
     function SampleNextArrow(props) {
         const { className, style, onClick } = props;
         return <div className={className} style={{ ...style, display: 'none' }} onClick={onClick} />;
@@ -61,15 +50,7 @@ const Home = () => {
                     return <img key={slide.id} src={slide.url} alt="" />;
                 })}
             </Slider>
-            {/* <div className="slide">
-                <img src={SLIDE[currentSlide]} alt="" className="imgSlide" />
-                <div className="preSlide" onClick={truSlide}>
-                    <GrFormPrevious />
-                </div>
-                <div className="nextSlide" onClick={plusSlide}>
-                    <GrFormNext />
-                </div>
-            </div> */}
+
             <div className="homeContent  ">
                 <div className="homeContentTitle">
                     <h3>ĐẶC QUYỀN CHO BẠN HÔM NAY!</h3>

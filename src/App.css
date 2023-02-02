@@ -29,6 +29,7 @@ li {
 .flex {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .grid {
     display: grid;
@@ -49,4 +50,16 @@ body {
     font-family: 'Quicksand', sans-serif;
     line-height: 1.45;
     font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 6rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 2rem;
+    }
 }

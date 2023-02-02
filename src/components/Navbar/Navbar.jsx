@@ -63,6 +63,7 @@ const Navbar = () => {
                     <div className="cart">
                         <a href="/">
                             <BsCart2 className="icon" />
+                            <div className="numberCart">0</div>
                         </a>
                         <span>Giỏ hàng</span>
                     </div>
